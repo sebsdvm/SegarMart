@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk - SegarMart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo"><i class="fas fa-leaf"></i> SegarMart</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <a href="keranjang.html"><i class="fas fa-shopping-cart"></i><span class="cart-badge">0</span></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <p style="margin-bottom:20px;color:var(--muted);">
+        <a href="index.html">Beranda</a> / <a href="produk.html">Produk</a> / <span id="breadcrumb">Detail</span>
+      </p>
+      <div id="detail-container" class="detail-wrapper"></div>
+
+      <div style="margin-top:50px;">
+        <h3 style="color:var(--primary-dark);margin-bottom:20px;">
+          <i class="fas fa-star" style="color:var(--accent);"></i> Produk Terkait
+        </h3>
+        <div id="related-products" class="products-grid"></div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 SegarMart. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const params = new URLSearchParams(window.location.search);
+      const id = parseInt(params.get('id'));
+      const related = products.filter(p => p.id !== id).slice(0, 4);
+      renderProducts('related-products', related);
+    });
+  </script>
+</body>
+</html>
