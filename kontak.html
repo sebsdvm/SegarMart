@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hubungi Kami - SegarMart</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <div class="container nav-wrapper">
+      <a href="index.html" class="logo"><i class="fas fa-leaf"></i> SegarMart</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Beranda</a></li>
+          <li><a href="produk.html">Produk</a></li>
+          <li><a href="tentang.html">Tentang</a></li>
+          <li><a href="kontak.html">Kontak</a></li>
+        </ul>
+      </nav>
+      <div class="nav-icons">
+        <a href="keranjang.html"><i class="fas fa-shopping-cart"></i><span class="cart-badge">0</span></a>
+        <a href="#"><i class="fas fa-user"></i></a>
+        <button class="menu-toggle"><i class="fas fa-bars"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <section style="background:linear-gradient(135deg,#e8f5e9 0%,#fff3e0 100%);padding:50px 0;">
+    <div class="container" style="text-align:center;">
+      <h1 style="color:var(--primary-dark);font-size:2.5rem;">Hubungi Kami</h1>
+      <p style="color:var(--muted);margin-top:10px;">Kami siap membantu Anda kapan saja</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container contact-wrapper">
+      <div class="contact-info">
+        <h3 style="color:var(--primary-dark);margin-bottom:25px;">Informasi Kontak</h3>
+        <div class="contact-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <div>
+            <h4>Alamat</h4>
+            <p>Jl. Kebun Raya No. 123, Jakarta Selatan, 12345</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-phone"></i>
+          <div>            <h4>Telepon</h4>
+            <p>+62 812-3456-7890</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>info@segarmart.id</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fas fa-clock"></i>
+          <div>
+            <h4>Jam Operasional</h4>
+            <p>Senin - Minggu: 07.00 - 22.00 WIB</p>
+          </div>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-whatsapp"></i>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>+62 812-3456-7890</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h3 style="color:var(--primary-dark);margin-bottom:25px;">Kirim Pesan</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Nama Lengkap</label>
+            <input type="text" id="name" required placeholder="Masukkan nama Anda">
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" required placeholder="email@contoh.com">
+          </div>
+          <div class="form-group">
+            <label for="phone">Nomor Telepon</label>
+            <input type="tel" id="phone" placeholder="+62 812-xxxx-xxxx">
+          </div>
+          <div class="form-group">
+            <label for="subject">Subjek</label>
+            <input type="text" id="subject" required placeholder="Subjek pesan">
+          </div>
+          <div class="form-group">
+            <label for="message">Pesan</label>
+            <textarea id="message" required placeholder="Tulis pesan Anda di sini..."></textarea>
+          </div>          <button type="submit" class="btn btn-primary" style="width:100%;">
+            <i class="fas fa-paper-plane"></i> Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="footer-bottom">
+        <p>&copy; 2026 SegarMart. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
